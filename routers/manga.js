@@ -41,8 +41,8 @@ router.get("/api/manga", auth, async (req, res) => {
         path: "manga",
         match,
         options: {
-          limit: parseInt(req.query.limit) || 4,
-          skip: parseInt(req.query.skip) || 0,
+          // limit: parseInt(req.query.limit) || 4,
+          // skip: parseInt(req.query.skip) || 0,
           sort,
         },
       })
