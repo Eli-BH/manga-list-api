@@ -13,19 +13,24 @@ const mangaSchema = new mongoose.Schema({
   },
   chapterAmount: {
     type: Number,
+    default: 0,
   },
   synopsis: {
     type: String,
     trim: true,
+    default: "",
   },
   malScore: {
     type: Number,
+    deafult: 0,
   },
   mangaImage: {
     type: String,
+    default: "",
   },
   malURL: {
     type: String,
+    default: "",
   },
   complete: {
     type: Boolean,
