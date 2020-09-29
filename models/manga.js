@@ -23,6 +23,10 @@ const mangaSchema = new mongoose.Schema({
     default: "",
     unique: false,
   },
+  rating: {
+    type: Number,
+    default: 0,
+  },
   malScore: {
     type: Number,
     deafult: 0,
