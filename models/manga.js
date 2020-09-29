@@ -5,7 +5,6 @@ const mangaSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    unique: true,
   },
   readChapterAmount: {
     type: Number,
