@@ -23,6 +23,9 @@ const mangaSchema = new mongoose.Schema({
     default: "",
     unique: false,
   },
+  readingStatus: {
+    type: String,
+  },
   rating: {
     type: Number,
     default: 0,

@@ -73,7 +73,12 @@ router.delete("/api/manga/:id", auth, async (req, res) => {
 //updata manga
 router.patch("/api/manga/:id", auth, async (req, res) => {
   const updates = Object.keys(req.body);
-  const allowedUpdates = ["readChapterAmount", "complete", "rating"];
+  const allowedUpdates = [
+    "readChapterAmount",
+    "complete",
+    "rating",
+    "readingStatus",
+  ];
   const isValidOperation = updates.every((update) =>
     allowedUpdates.includes(update)
   );
