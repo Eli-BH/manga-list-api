@@ -5,6 +5,7 @@ const mangaSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
+    unique: false,
   },
   readChapterAmount: {
     type: Number,
@@ -18,6 +19,7 @@ const mangaSchema = new mongoose.Schema({
     type: String,
     trim: true,
     default: "",
+    unique: false,
   },
   malScore: {
     type: Number,
