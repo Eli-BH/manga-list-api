@@ -47,7 +47,7 @@ router.get("/api/manga", auth, async (req, res) => {
         },
       })
       .execPopulate();
-    res.status(200).send(req.user.manga);
+    res.status(200).send(req.user.manga.distinct("title"));
   } catch (error) {
     res.status(500).send(error);
   }
