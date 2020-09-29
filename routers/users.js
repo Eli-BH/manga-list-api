@@ -13,7 +13,7 @@ router.post("/api/users/signup", async (req, res) => {
     const token = await user.generateAuthToken();
     res.status(201).send({ user, token });
   } catch (error) {
-    res.status(500).send(error);
+    res.status(500).send({ error: "duplicate" });
   }
 });
 

@@ -10,10 +10,12 @@ const mangaSchema = new mongoose.Schema({
   readChapterAmount: {
     type: Number,
     default: 0,
+    unique: false,
   },
   chapterAmount: {
     type: Number,
     default: 0,
+    unique: false,
   },
   synopsis: {
     type: String,
@@ -24,14 +26,17 @@ const mangaSchema = new mongoose.Schema({
   malScore: {
     type: Number,
     deafult: 0,
+    unique: false,
   },
   mangaImage: {
     type: String,
     default: "",
+    unique: false,
   },
   malURL: {
     type: String,
     default: "",
+    unique: false,
   },
   complete: {
     type: Boolean,
