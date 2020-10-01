@@ -26,9 +26,6 @@ router.get("/api/manga", auth, async (req, res) => {
   if (req.query.completed) {
     match.completed = req.query.completed === "true";
   }
-  if (req.query.title) {
-    match.title = req.query.title;
-  }
 
   if (req.query.sortBy) {
     const parts = req.query.sortBy.split(":");
